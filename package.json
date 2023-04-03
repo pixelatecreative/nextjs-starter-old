@@ -13,11 +13,14 @@
     "commit": "cz",
     "clean": "rimraf .next out",
     "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
-    "check-types": "tsc --noEmit --pretty"
+    "check-types": "tsc --noEmit --pretty",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^13.2.4",
     "next": "13.2.4",
     "next-seo": "^6.0.0",
+    "next-sitemap": "^4.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
