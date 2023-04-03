@@ -1,7 +1,7 @@
 {
   "name": "turkishtechnology.web",
   "author": "Önder Bakırtaş (https://github.com/onderbakirtas)",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "dev": "next dev -p 3300",
