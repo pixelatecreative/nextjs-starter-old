@@ -1,12 +1,17 @@
-import Head from 'next/head';
+import { Meta } from '@/layouts/Meta';
+import { Main } from '@/templates/Main';
 
-export default function Home() {
+export default function Index() {
   return (
-    <>
-      <Head>
-        <title>Pixelate • NextJS Starter</title>
-      </Head>
-      <main>Hello Pixelate</main>
-    </>
+    <Main
+      meta={
+        <Meta
+          title="Pixelate Starter • Anasayfa"
+          description="Pixelate Starter projesi anasayfasıdır."
+        />
+      }
+    >
+      <h1>Pixelate Starter</h1>
+    </Main>
   );
 }
