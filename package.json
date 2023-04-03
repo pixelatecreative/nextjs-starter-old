@@ -1,0 +1,56 @@
+{
+  "name": "turkishtechnology.web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3300",
+    "build": "next build",
+    "build-stats": "cross-env ANALYZE=true npm run build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export",
+    "prepare": "husky install",
+    "commit": "cz",
+    "clean": "rimraf .next out",
+    "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
+    "check-types": "tsc --noEmit --pretty"
+  },
+  "dependencies": {
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/cz-commitlint": "^17.5.0",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.31",
+    "@types/react-dom": "18.0.11",
+    "commitizen": "^4.3.0",
+    "cross-env": "^7.0.3",
+    "eslint": "8.37.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "eslint-config-next": "13.2.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-simple-import-sort": "10.0.0",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "husky": "8.0.3",
+    "lint-staged": "^13.2.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^4.4.1",
+    "sass": "^1.60.0",
+    "typescript": "5.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}
