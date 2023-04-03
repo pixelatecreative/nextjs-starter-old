@@ -5,15 +5,16 @@
   "scripts": {
     "dev": "next dev -p 3300",
     "build": "next build",
-    "build-stats": "cross-env ANALYZE=true npm run build",
     "start": "next start",
-    "lint": "next lint",
+    "build-stats": "cross-env ANALYZE=true npm run build",
     "export": "next export",
-    "prepare": "husky install",
-    "commit": "cz",
+    "build-prod": "run-s clean build export",
     "clean": "rimraf .next out",
+    "lint": "next lint",
     "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
     "check-types": "tsc --noEmit --pretty",
+    "commit": "cz",
+    "prepare": "husky install",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
