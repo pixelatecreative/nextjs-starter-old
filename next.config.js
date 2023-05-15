@@ -1,4 +1,3 @@
-const path = require('path');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
@@ -12,9 +11,8 @@ const nextConfig = {
   eslint: {
     dirs: ['.'],
   },
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
-    prependData: `@import "@/styles/config/index.scss";`,
+  experimental: {
+    appDir: true,
   },
 };
 

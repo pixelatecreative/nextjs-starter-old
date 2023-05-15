@@ -17,5 +17,6 @@
   },
   "[scss]": {
     "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
-  }
+  },
+  "dotenv.enableAutocloaking": true
 }
