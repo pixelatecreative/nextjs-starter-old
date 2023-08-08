@@ -14,6 +14,10 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  sassOptions: {
+    includePaths: ['./src/styles'],
+    prependData: `@import "config/index.scss";`,
+  },
 };
 
 module.exports = withBundleAnalyzer(nextConfig);
